@@ -1,0 +1,163 @@
+.reviews {
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__item {
+  list-style-type: none;
+  padding-top: 20px;
+  border-bottom: 0.5px solid $border-black02;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:nth-child(2) {
+    .reviews__text--title {
+      margin-top: 28px;
+    }
+    .reviews__text--advantages {
+      margin-top: 13px;
+    }
+    .reviews__text--problems {
+      margin-top: 10px;
+    }
+    .reviews__text--move {
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27.24px;
+  color: $text-main;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-top: 5px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.43px;
+  color: $text-black;
+}
+
+.reviews__text--title {
+  margin-top: 13px;
+  margin-bottom: 3px;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20.43px;
+  color: $text-black;
+}
+
+.reviews__text--advantages {
+  margin-top: 13px;
+  &:before {
+    content: "+";
+    color: $text-red;
+    margin-right: 10px;
+  }
+}
+
+.reviews__text--problems {
+  margin-top: 15px;
+  &:before {
+    content: "-";
+    color: $text-red;
+    margin-right: 14px;
+  }
+}
+
+.reviews__text--move {
+  margin-top: 0;
+  margin-left: 19px;
+  margin-bottom: 13px;
+}
+
+.reviews__rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.reviews__stars {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__means {
+  margin-left: 18px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20.43px;
+  color: $text-red;
+}
+
+.reviews__answer {
+  margin-top: 13px;
+  margin-bottom: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.reviews__time {
+  margin: 0;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: $text-black;
+  opacity: 0.4;
+}
+
+.reviews__link {
+  margin-left: 26px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: $text-red;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.reviews__sent {
+  position: absolute;
+  top: 29px;
+  right: 3px;
+  width: 189px;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+  color: $text-red;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid $text-red;
+  box-sizing: border-box;
+  background-color: $background-white;
+
+}

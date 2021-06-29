@@ -1,0 +1,45 @@
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+.logo__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo__image {
+  align-self: flex-start;
+}
+
+.logo__title {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.title__text {
+  margin: 0;
+  color: $text-main;
+}
+
+.title__text--upper {
+  font-family: $OpenBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24.51px;
+  letter-spacing: 0.13em;
+
+}
+
+.title__text--lower {
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.07px;
+  letter-spacing: 0.13em;
+}

@@ -1,0 +1,60 @@
+/*Global*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $background-white;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: $text-main;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 5px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

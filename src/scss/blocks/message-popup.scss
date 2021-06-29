@@ -1,0 +1,243 @@
+.message-popup {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: $background06;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.message-popup.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.message-popup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 698px;
+  height: 415px;
+  background-color: $background-grey;
+}
+
+.message-popup__title {
+  margin-top: 30px;
+  margin-bottom: 48px;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 34px;
+  color: $text-main;
+}
+
+.message-popup__btn {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  border: none;
+  background-color: $background-grey;
+  cursor: pointer;
+}
+
+.close-btn__svg {
+  &:hover path {
+    fill-opacity: 0.5;
+  }
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.message-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  width: 100%;
+}
+
+.message-form__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-form__label {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.message-form__field {
+  width: 300px;
+  height: 50px;
+  padding-left: 25px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: $text-main;
+  background: $background-white;
+  border: 1px solid $border-gray02;
+  box-sizing: border-box;
+  &:invalid {
+    border: 1px solid $border-gray02;
+  }
+  &:focus ~ .message-form__required {
+    display: none;
+  }
+}
+
+.message-form__field.error {
+  border: 1px solid $text-error-red;
+}
+
+.message-form__errorText {
+  display: none;
+  position: absolute;
+  top: -23px;
+  left: 1px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: $text-error-red;
+}
+
+.message-form__errorText.error {
+  display: block;
+}
+
+.message-form__required {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  font-family: $ProximaBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $text-red;
+}
+
+.message-form__rating {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+.message-form__text {
+  margin: 0;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: $text-black;
+}
+
+.message-form__stars {
+  display: flex;
+  margin-left: 15px;
+}
+
+.rating__input {
+  display: none;
+
+  &:checked ~ .rating__label::after {
+    color: $star-empty;
+  }
+
+  &:checked + .rating__label::after {
+    color: $star-checked;
+  }
+}
+
+.rating__label {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  padding-right: 5px;
+  cursor: pointer;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &::after {
+    content: '★';
+    display: block;
+    font-size: 32px;
+    line-height: 36px;
+    color: $star-checked;
+    transition: color 0.2s;
+  }
+}
+
+.textarea-label {
+  margin-top: 27px;
+}
+
+.message-form__area {
+  width: 300px;
+  height: 118px;
+  padding-top: 14px;
+  padding-left: 25px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: $text-main;
+  background: $background-white;
+  border: 1px solid $border-gray02;
+  box-sizing: border-box;
+  resize: none;
+  &:invalid {
+    border: 1px solid $border-gray02;
+  }
+  &:focus ~ .message-form__required {
+    display: none;
+  }
+}
+
+.message-form__area.error {
+  border: 1px solid $text-error-red;
+}
+
+.message-form__submit {
+  width: 190px;
+  margin-top: 15px;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 52px;
+  color: $text-white;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: $background-red;
+  cursor: pointer;
+}

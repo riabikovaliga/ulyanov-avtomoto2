@@ -1,0 +1,31 @@
+.page-main {
+  margin: 0;
+}
+
+.page-main__wrapper {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 610px 1fr;
+  padding-top: 74px;
+}
+
+.page-main__slider {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.page-main__description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.page-main__tabs {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

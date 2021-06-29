@@ -1,0 +1,127 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: 50px;
+}
+
+.description__title {
+  margin: 0;
+  margin-left: 10px;
+  font-family: $OpenBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40.85px;
+  color: $text-main;
+}
+
+.description__list {
+  margin-top: 19px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.description__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7px;
+  opacity: 0.5;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.description__icon {
+  min-height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description__text {
+  display: inline-block;
+  min-width: 70px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: $text-main;
+  text-align: center;
+}
+
+.description__prices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.description__price--new {
+  margin-left: 7px;
+  font-family: $OpenBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 47.66px;
+  color: $text-main;
+}
+
+.description__price--old {
+  position: relative;
+  margin-left: 33px;
+  font-family: $OpenRegular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27.24px;
+  color: $text-gray05;
+  &::before {
+    content: url("../img/line.svg");
+    position: absolute;
+    top: -1px;
+    left: -10px;
+    z-index: 10;
+    opacity: 0.5;
+  }
+}
+
+.description__order {
+  margin-left: 6px;
+  margin-top: 37px;
+  width: 196px;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 52px;
+  text-align: center;
+  color: $text-white;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background-color: $background-red;
+}
+
+.description__loan {
+  margin-left: 6px;
+  margin-top: 14px;
+  width: 222px;
+  font-family: $OpenMedium;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  color: $text-red;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background-color: $background-white;
+  border: 1px solid $text-red;
+}

@@ -1,0 +1,11 @@
+.page-header {
+  margin: 0;
+
+  background-color: $background-grey;
+}
+
+.page-header__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding: 15px 0 0;
+}
